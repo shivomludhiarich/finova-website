@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 export default function Navbar() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-10 py-6">
@@ -21,24 +24,14 @@ export default function Navbar() {
         flex gap-10
         shadow-xl
       ">
-        {["Services", "Work", "Contact"].map((item) => (
-          <a
-            key={item}
-            href={`#${item.toLowerCase()}`}
-            className="
-              font-mono
-              text-[20px]
-              text-white
-              px-4 py-2
-              rounded-full
-              transition-all duration-200
-              hover:bg-white
-              hover:text-black
-            "
-          >
-            {item.toUpperCase()}
-          </a>
-        ))}
+       <Link
+        to="/"
+        className="font-mono text-[20px] text-white px-4 py-2 rounded-full transition-all duration-200 hover:bg-white hover:text-black"
+        >HOME</Link>
+        <Link
+        to="/team"
+        className="font-mono text-[20px] text-white px-4 py-2 rounded-full transition-all duration-200 hover:bg-white hover:text-black"
+        >TEAM</Link>
       </nav>
 
       {/* RIGHT — Socials */}
