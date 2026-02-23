@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import About from './components/AboutUs'
 import Domains from './components/Domains'
 import Board from "./components/Board";
+import Events from "./components/Events"
 
 
 function Home() {
@@ -17,9 +18,7 @@ function Home() {
       <Hero />
       <About />
       <Domains />
-      <Services />
-      <Work />
-      <Contact />
+      
     </>
   );
 }
@@ -32,9 +31,12 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<Board />} />
+        <Route path="/events" element={<Events />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
 
       <Footer />
     </div>
   );
 }
+
