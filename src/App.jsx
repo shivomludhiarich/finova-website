@@ -25,7 +25,7 @@ function Home() {
 
 export default function App() {
   return (
-    <div className="bg-cyan-400 text-black">
+    <div className="bg-black text-black">
       <Navbar />
 
       <Routes>
